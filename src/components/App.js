@@ -70,7 +70,7 @@ const styles = {
 // set default font family for the app based on platform
 const customTextProps = {
 	style: {
-		fontFamily: (Platform.OS === 'ios' ? 'Helvetica' : 'monospace')
+		fontFamily: (Platform.OS === 'ios' ? 'Helvetica' : 'notoserif')
 	}
 }
 
