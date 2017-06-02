@@ -23,17 +23,23 @@ class App extends Component {
 	render() {
 		return(
 			<View style={styles.containerStyles}>
+
 				<Header headerText={'Score Cards'} />
+
 				<View style={styles.viewStyles}>
+
 					<View style={styles.scoreStyles}>
 						<Text style={styles.scoreTextStyles}>{ this.state.currentScore }</Text>
 					</View>
-					<View>
-						<Menu style={styles.menuStyles}>
+
+					<View style={styles.menuStyles}>
+						<Menu>
 							{ this.renderMenuItems() }
 						</Menu>
 					</View>
+
 				</View>
+
 			</View>
 		);
 	}
@@ -42,17 +48,17 @@ class App extends Component {
 const styles = {
 	viewStyles: {
 		flex: 1,
-		flexDirection: 'column',
-		justifyContent: 'space-between'
+		flexDirection: 'column'
 	},
 	containerStyles: {
 		flex: 1
 	},
 	scoreStyles: {
-		flex: 1
+		flex: 3,
+		alignSelf: 'center'
 	},
 	scoreTextStyles: {
-		fontSize: 200,
+		fontSize: 250,
 		color: 'black',
 		alignSelf: 'center'
 	},
@@ -64,7 +70,7 @@ const styles = {
 // set default font family for the app based on platform
 const customTextProps = {
 	style: {
-		fontFamily: (Platform.OS === 'ios' ? 'Helvetica' : 'sans-serif')
+		fontFamily: (Platform.OS === 'ios' ? 'Helvetica' : 'monospace')
 	}
 }
 

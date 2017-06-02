@@ -16,7 +16,7 @@ const styles = {
 	buttonStyles: {
 		width: 80,
 		height: 80,
-		backgroundColor: '#4c5056',
+		backgroundColor: '#00B4B3',
 		shadowColor: 'black',
 		shadowOpacity: 0.5,
 		shadowOffset: {
@@ -24,8 +24,8 @@ const styles = {
 			width: 2
 		},
 		elevation: 2,
-		marginTop: 10,
-		marginBottom: 5,
+		// marginTop: 5,
+		// marginBottom: 5,
 		marginRight: 5,
 		marginLeft: 5,
 		justifyContent: 'center'

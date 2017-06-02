@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Platform } from 'react-native';
 
 const Header = ({ headerText }) => {
 	const { viewStyles, textStyles } = styles;
@@ -15,11 +15,11 @@ const Header = ({ headerText }) => {
 
 const styles = {
 	viewStyles: {
-		backgroundColor: '#4c5056',
+		backgroundColor: '#00B4B3',
 		justifyContent: 'center',
 		alignItems: 'center',
 		height: 60,
-		paddingTop: 15,
+		paddingTop: (Platform.OS === 'ios' ? 15 : 0),
 		shadowColor: '#000',
 		shadowOffset: { width: 0, height: 2 },
 		shadowOpacity: 0.2,
